@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Lopez - Portfolio</title>
+    <meta name="description" content="Portfolio de Julian Lopez, étudiant en BUT Informatique - 2ème année.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Julian Lopez - Portfolio">
+    <meta property="og:description" content="Portfolio étudiant BUT Informatique - 2ème année">
+    <meta property="og:type" content="website">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Julian Lopez</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="apprentissage.html">Apprentissage</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+                <span>🌓</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <canvas id="particles-canvas"></canvas>
+            <div class="hero-content reveal">
+                <h1>Julian Lopez</h1>
+                <p class="subtitle">Étudiant BUT Informatique – Parcours RACDV</p>
+                <p class="intro">Curieux, j'aime comprendre en profondeur et apprendre vite. Sérieux et volontaire, je
+                    structure mon travail et j'avance en équipe. J'explore développement, data, IA et cyber‑sécurité
+                    pour affiner mon projet.</p>
+
+                <div class="availability-badge"
+                    style="display: inline-block; background: rgba(58, 122, 254, 0.1); color: var(--color-primary); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem; font-weight: 600; margin-bottom: 2rem; border: 1px solid var(--color-primary);">
+                    Stage de 12 semaines dès le 20 avril ; alternance dès le 1er septembre.
+                </div>
+
+                <div class="hero-actions">
+                    <a href="assets/CV Julian Lopez.pdf" class="btn" download>Télécharger le CV</a>
+                    <a href="#parcours" class="btn btn-outline">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parcours Section -->
+        <section id="parcours" class="container">
+            <h2 class="reveal">Mon Parcours</h2>
+            <div class="timeline reveal">
+
+                <div class="timeline-item">
+                    <p class="timeline-date">2024 - Présent</p>
+                    <h3>BUT Informatique</h3>
+                    <p><a href="https://iut-montpellier-sete.edu.umontpellier.fr/formations-3/nos-formations/bachelor-universaire-de-technologie/b-u-t-informatique/"
+                            target="_blank" style="text-decoration: underline;">IUT de Montpellier–Sète</a></p>
+                </div>
+
+                <div class="timeline-item">
+                    <p class="timeline-date">2023 - 2024</p>
+                    <h3>Baccalauréat général</h3>
+                    <p>Lycée Jean Jaurès – Saint‑Clément‑de‑Rivière (34)</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-top: 0.5rem;">
+                        Mention Bien. Spécialités : Mathématiques, Physique‑Chimie, NSI.<br>
+                        Option : Mathématiques expertes. Section : Anglais Euro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projet Professionnel Section -->
+        <section class="container reveal">
+            <h2>Projet Professionnel & Formation</h2>
+            <div class="card">
+                <h3>Projet Professionnel</h3>
+                <p>Je garde le champ ouvert entre développement, data, IA et cyber‑sécurité. Mon objectif est d’explorer
+                    ces axes via projets et stage pour préciser mon orientation.</p>
+
+                <h3 style="margin-top: 1.5rem;">Projet de Formation Post-BUT</h3>
+                <p>Intégrer une école d’ingénieurs en alternance après le BUT, afin d’approfondir mes compétences
+                    techniques tout en les appliquant en entreprise.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Julian Lopez. Tous droits réservés.</p>
+            <!-- Easter Egg: Tiny hidden button -->
+            <button id="easter-egg-btn" class="easter-egg-btn" aria-label="Easter egg">.</button>
+            <!-- Easter Egg Game: Hidden game button -->
+            <button id="game-egg-btn" class="easter-egg-btn" style="left: 10px; right: auto;"
+                aria-label="Secret game">💩</button>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/node.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations - Julian Lopez</title>
+    <meta name="description" content="Projets et réalisations de Julian Lopez">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Julian Lopez</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="realisations.html" class="active">Réalisations</a></li>
+                    <li><a href="apprentissage.html">Apprentissage</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème"><span>🌓</span></button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="reveal">
+            <h1>Mes Réalisations</h1>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
+                Voici une sélection de mes projets académiques, personnels et professionnels.
+            </p>
+
+            <!-- Filtres -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="Académique">Académique</button>
+                <button class="filter-btn" data-filter="Personnel">Personnel</button>
+                <button class="filter-btn" data-filter="Professionnel">Professionnel</button>
+            </div>
+
+            <!-- Carrousel de projets -->
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-prev" aria-label="Projet précédent">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+
+                        <!-- Projet #1 — BOTUP -->
+                        <article class="carousel-slide card project-card" data-categorie="Académique">
+                            <img src="assets/images/botup-01.webp" alt="Aperçu du projet BOTUP" loading="lazy"
+                                onerror="this.src='https://via.placeholder.com/400x200?text=BOTUP'">
+                            <h3>BOTUP : Site de vote en ligne</h3>
+                            <p class="tags">#PHP #HTML/CSS #SQL #Scrum</p>
+                            <p>Application de vote en ligne en PHP/HTML/CSS, POO et base de données. Méthodologie Scrum,
+                                versioning Git, intégrité via triggers.</p>
+                            <a href="projets/botup.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
+                                projet</a>
+                        </article>
+
+                        <!-- Projet #2 — SAE 1.01 -->
+                        <article class="carousel-slide card project-card" data-categorie="Académique">
+                            <img src="assets/images/sae421-01.webp" alt="Aperçu du projet Jeu 421" loading="lazy"
+                                onerror="this.src='https://via.placeholder.com/400x200?text=Jeu+421'">
+                            <h3>SAE 1.01 : Jeu 421 avec IA</h3>
+                            <p class="tags">#Java #IA #POO #Tests</p>
+                            <p>Jeu 421 en Java avec IA probabiliste ; mise en pratique de la POO et des tests.</p>
+                            <a href="projets/sae-421.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
+                                projet</a>
+                        </article>
+
+                        <!-- Projet #3 — SAE 2.02 -->
+                        <article class="carousel-slide card project-card" data-categorie="Académique">
+                            <img src="assets/images/tcg-01.webp" alt="Aperçu du projet Pokémon TCG" loading="lazy"
+                                onerror="this.src='https://via.placeholder.com/400x200?text=Pokemon+TCG'">
+                            <h3>SAE 2.02 : Pokémon TCG</h3>
+                            <p class="tags">#Java #JavaFX #IHM #UX</p>
+                            <p>Appli ludique avec IHM JavaFX ; modularité, gestion d'événements et attention UX.</p>
+                            <a href="projets/pokemon-tcg.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
+                                projet</a>
+                        </article>
+
+                        <!-- Projet #4 — Code Game Jam -->
+                        <article class="carousel-slide card project-card" data-categorie="Académique">
+                            <img src="assets/images/gamejam-01.webp" alt="Aperçu du projet Game Jam" loading="lazy"
+                                onerror="this.src='https://via.placeholder.com/400x200?text=Game+Jam'">
+                            <h3>Code Game Jam</h3>
+                            <p class="tags">#GameDev #Teamwork #Agile</p>
+                            <p>Prototype de jeu réalisé en équipe en 24h ; coordination, compromis et réactivité.</p>
+                            <a href="projets/game-jam.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
+                                projet</a>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button class="carousel-btn carousel-btn-next" aria-label="Projet suivant">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Indicateurs de carrousel -->
+            <div class="carousel-indicators">
+                <button class="carousel-indicator active" data-slide="0" aria-label="Aller au projet 1"></button>
+                <button class="carousel-indicator" data-slide="1" aria-label="Aller au projet 2"></button>
+                <button class="carousel-indicator" data-slide="2" aria-label="Aller au projet 3"></button>
+                <button class="carousel-indicator" data-slide="3" aria-label="Aller au projet 4"></button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Julian Lopez. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[[TITRE PROJET]] - [[NOM COMPLET]]</title>
+    <meta name="description" content="Détails du projet [[TITRE PROJET]]">
+
+    <!-- Note: Paths are relative (../) because we are in the projets/ folder -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">[[NOM COMPLET]]</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../realisations.html" class="active">Réalisations</a></li>
+                    <li><a href="../apprentissage.html">Apprentissage</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème"><span>🌓</span></button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Header du Projet -->
+        <section class="reveal">
+            <a href="../realisations.html" style="display: inline-block; margin-bottom: 1rem;">&larr; Retour aux
+                réalisations</a>
+            <h1>[[TITRE PROJET]]</h1>
+            <p class="subtitle">[[CATÉGORIE : Académique / Personnel / Professionnel]]</p>
+            <p class="tags">[[#MotsClés, #Technos]]</p>
+
+            <!-- Image principale ou Vidéo -->
+            <figure style="margin: 2rem 0;">
+                <img src="../assets/images/[[CAPTURE_1.jpg]]" alt="Aperçu principal du projet"
+                    style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                <!-- OU pour une vidéo :
+                <video controls style="width: 100%; border-radius: var(--radius-md);">
+                    <source src="../assets/videos/[[VIDEO.mp4]]" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                -->
+                <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">[[Légende de
+                    l'image]]</figcaption>
+            </figure>
+        </section>
+
+        <!-- Sections Normées -->
+        <div style="max-width: 800px; margin: 0 auto;">
+
+            <section class="reveal">
+                <h2>Contexte</h2>
+                <p>[[Commande académique, contraintes, durée, équipe ou solo. Explique ici pourquoi ce projet a été fait
+                    et dans quel cadre.]]</p>
+            </section>
+
+            <section class="reveal">
+                <h2>Méthodes & Résultats</h2>
+                <p>[[Processus de réalisation, choix techniques, tests effectués. Raconte brièvement l'histoire du
+                    développement.]]</p>
+                <p>[[Résultats mesurables : note obtenue, satisfaction client, performance, etc.]]</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+                    <img src="../assets/images/[[CAPTURE_2.jpg]]" alt="Détail interface"
+                        style="border-radius: var(--radius-sm);">
+                    <img src="../assets/images/[[CAPTURE_3.jpg]]" alt="Détail code ou autre"
+                        style="border-radius: var(--radius-sm);">
+                </div>
+            </section>
+
+            <section class="reveal">
+                <h2>Compétences Travaillées</h2>
+                <ul>
+                    <li>[[Compétence précise 1 : ex. Concevoir une base de données relationnelle]]</li>
+                    <li>[[Compétence précise 2 : ex. Développer une interface responsive]]</li>
+                    <li>[[Compétence précise 3]]</li>
+                </ul>
+            </section>
+
+            <section class="reveal">
+                <h2>Contribution Personnelle</h2>
+                <p>[[Si projet de groupe : Ce que j'ai réalisé personnellement. Si solo : Les défis que j'ai relevés
+                    seul.]]</p>
+            </section>
+
+            <section class="reveal" style="text-align: center; margin-top: 2rem;">
+                <a href="[[LIEN VERS LE PROJET / REPO]]" target="_blank" class="btn">Voir le projet en ligne / Code
+                    source</a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 [[NOM COMPLET]]. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

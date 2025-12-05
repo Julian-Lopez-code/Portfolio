@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage - Julian Lopez</title>
+    <meta name="description" content="Portfolio d'apprentissage de Julian Lopez">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Julian Lopez</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="apprentissage.html" class="active">Apprentissage</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème"><span>🌓</span></button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="reveal">
+            <h1>Portfolio d'Apprentissage</h1>
+            <p class="intro">
+                Validation des compétences du BUT Informatique (Niveau 2) - Parcours RACDV.
+            </p>
+
+            <div style="display: grid; gap: 2rem; margin-top: 3rem;">
+
+                <!-- Compétence 1 : Développement -->
+                <article class="card competence">
+                    <h3>Réaliser un développement d'application (Niveau 2)</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC1 : Élaborer et implémenter les spécifications fonctionnelles et non
+                                fonctionnelles</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> <a href="projets/botup.html">BOTUP</a>, <a
+                                        href="projets/sae-421.html">SAE 1.01</a>, <a href="projets/pokemon-tcg.html">SAE
+                                        2.02</a></p>
+                                <p><strong>Argumentation :</strong> Les projets m'ont appris à traduire les besoins en
+                                    spécifications utiles, à structurer la POO et à intégrer tests plus tôt. Je
+                                    progresse vers une démarche TDD plus systématique.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC2 : Appliquer des principes d'accessibilité et d'ergonomie</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> <a href="projets/pokemon-tcg.html">SAE 2.02</a>, <a
+                                        href="projets/botup.html">BOTUP</a></p>
+                                <p><strong>Argumentation :</strong> J'ai appliqué les principes d'ergonomie dans les
+                                    interfaces JavaFX et web, en veillant à la clarté des interactions et à la cohérence
+                                    visuelle pour améliorer l'expérience utilisateur.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC3 : Adopter de bonnes pratiques de conception et de programmation</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> <a href="projets/sae-421.html">SAE 1.01</a>, <a
+                                        href="projets/botup.html">BOTUP</a></p>
+                                <p><strong>Argumentation :</strong> J'ai structuré mes projets en respectant les
+                                    principes SOLID, utilisé Git pour le versioning, et documenté mon code pour
+                                    faciliter la maintenance et la collaboration.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC4 : Vérifier et valider la qualité de l'application par les tests</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> <a href="projets/sae-421.html">SAE 1.01</a>, <a
+                                        href="projets/botup.html">BOTUP</a></p>
+                                <p><strong>Argumentation :</strong> J'ai mis en place des tests unitaires pour valider
+                                    les fonctionnalités critiques et détecter les régressions. Cette pratique m'a permis
+                                    de livrer des applications plus robustes.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Compétence 2 : Données -->
+                <article class="card competence">
+                    <h3>Optimiser des applications informatiques (Niveau 2)</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC1 : Analyser un problème avec méthode</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> <a href="projets/botup.html">BOTUP (BD)</a>, SAE BD S1/S2
+                                </p>
+                                <p><strong>Argumentation :</strong> J'ai structuré des données, nettoyé des tables Excel
+                                    et conçu des requêtes pertinentes. Je vise une meilleure qualité et cohérence des
+                                    modèles à l'échelle.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC2 : Comparer des algorithmes pour des problèmes classiques</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> <a href="projets/sae-421.html">SAE 1.01 (IA
+                                        probabiliste)</a></p>
+                                <p><strong>Argumentation :</strong> J'ai comparé différentes approches algorithmiques
+                                    pour l'IA du jeu 421, en analysant leur efficacité et leur complexité pour choisir
+                                    la solution optimale.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC3 : Formaliser et mettre en œuvre des outils mathématiques</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE Statistiques, <a href="projets/sae-421.html">SAE
+                                        1.01</a></p>
+                                <p><strong>Argumentation :</strong> J'ai appliqué des concepts de probabilités et de
+                                    statistiques pour modéliser le comportement de l'IA et analyser des jeux de données.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Compétence 3 : Réseaux -->
+                <article class="card competence">
+                    <h3>Administrer des systèmes informatiques communicants complexes (Niveau 2)</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC1 : Maîtriser l'architecture des systèmes et des réseaux</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 1.03, SAE 2.03 (Linux, env. web)</p>
+                                <p><strong>Argumentation :</strong> J'installe et configure des environnements Linux et
+                                    des services web. Je documente les étapes pour favoriser le transfert et l'autonomie
+                                    des utilisateurs.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC2 : Sécuriser le système d'information</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 2.03, <a href="projets/botup.html">BOTUP (triggers
+                                        BD)</a></p>
+                                <p><strong>Argumentation :</strong> J'ai mis en place des mécanismes de sécurité comme
+                                    les triggers pour garantir l'intégrité des données et appliqué des bonnes pratiques
+                                    de configuration système.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC3 : Déployer des services dans une architecture réseau</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 2.03 (services web et virtualisation)</p>
+                                <p><strong>Argumentation :</strong> J'ai déployé et configuré des services web sur des
+                                    environnements virtualisés, en veillant à leur bon fonctionnement et à leur
+                                    accessibilité.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+
+
+                <!-- Compétence 4 : Gérer -->
+                <article class="card competence">
+                    <h3>Gérer un projet informatique (Niveau 2)</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC1 : Planifier et organiser les tâches</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 1.04, SAE 2.04, <a href="projets/botup.html">BOTUP</a>
+                                </p>
+                                <p><strong>Argumentation :</strong> J'ai appris à planifier les tâches avec des outils
+                                    adaptés et à prioriser les actions. Je progresse vers une gestion plus proactive des
+                                    risques et des délais.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC2 : Suivre l'avancement et ajuster les ressources</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 2.04, <a href="projets/botup.html">BOTUP</a></p>
+                                <p><strong>Argumentation :</strong> J'ai suivi l'avancement des livrables et ajusté les
+                                    ressources pour respecter les contraintes. Je vise une meilleure anticipation des
+                                    imprévus.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Compétence 5 : Conduire -->
+                <article class="card competence">
+                    <h3>Conduire une équipe projet (Niveau 2)</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC1 : Communiquer clairement les objectifs</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 2.05, <a href="projets/botup.html">BOTUP</a></p>
+                                <p><strong>Argumentation :</strong> J'ai conduit des réunions et clarifié les objectifs
+                                    pour l'équipe. Je vise à renforcer ma capacité à anticiper les obstacles et à
+                                    maintenir la motivation collective.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC2 : Gérer les imprévus et prendre des décisions</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 2.05</p>
+                                <p><strong>Argumentation :</strong> J'ai pris des décisions rapides face aux imprévus
+                                    pour maintenir le projet sur les rails. Je progresse vers une meilleure gestion des
+                                    risques.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Compétence 6 : Collaborer -->
+                <article class="card competence">
+                    <h3>Collaborer au sein d'une équipe (Niveau 2)</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC1 : Travailler efficacement en binôme ou en groupe</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 1.06, SAE 2.06, <a href="projets/botup.html">BOTUP</a>
+                                </p>
+                                <p><strong>Argumentation :</strong> J'ai travaillé en binôme et utilisé des outils
+                                    collaboratifs pour partager les livrables. Je progresse vers une communication plus
+                                    fluide et une meilleure gestion des désaccords.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem;">
+                            <strong>AC2 : Écouter et intégrer les idées des autres</strong>
+                            <div
+                                style="margin-top: 0.5rem; padding-left: 1rem; border-left: 3px solid var(--color-primary);">
+                                <p><strong>Preuves :</strong> SAE 2.06</p>
+                                <p><strong>Argumentation :</strong> J'ai reformulé les propositions des autres membres
+                                    pour valider la compréhension et favoriser la cohésion.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Julian Lopez. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
