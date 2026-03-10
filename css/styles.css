@@ -625,156 +625,121 @@ section {
   position: relative;
 }
 
-/* Easter Egg */
-.easter-egg-btn {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 8px;
-  height: 8px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  opacity: 0.1;
-  transition: opacity var(--transition-fast);
-  padding: 0;
-  font-size: 8px;
-  color: var(--color-text-light);
-}
-
-.easter-egg-btn:hover {
-  opacity: 0.5;
-}
-
-.easter-egg-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+/* Timeline - Séparateur pointillés & Future */
+.timeline-dotted {
+  position: relative;
+  margin-left: 0;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--transition-normal);
 }
 
-.easter-egg-modal.active {
-  opacity: 1;
-  pointer-events: all;
+.timeline-dotted::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom,
+      var(--color-border) 0px,
+      var(--color-border) 6px,
+      transparent 6px,
+      transparent 14px);
 }
 
-.easter-egg-content {
-  background: var(--color-bg);
-  padding: 3rem;
-  border-radius: var(--radius-lg);
-  max-width: 500px;
-  text-align: center;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  transform: scale(0.8);
-  transition: transform var(--transition-normal);
+.timeline-future {
+  opacity: 0.65;
 }
 
-.easter-egg-modal.active .easter-egg-content {
-  transform: scale(1);
+.timeline-future::before {
+  background-color: var(--color-text-light);
+  border: 2px solid var(--color-bg);
 }
 
-.easter-egg-content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #7C9B8E, #63B969);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.timeline-future-white-dot::before {
+  background-color: white;
+  border: 2px solid var(--color-bg);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 
-[data-theme="dark"] .easter-egg-content h2 {
-  background: linear-gradient(135deg, #7C9B8E, #4A8B4F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.timeline-future .timeline-date {
+  font-style: italic;
 }
 
-.easter-egg-content p {
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
+/* Parcours two-column layout */
+.parcours-layout {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 3rem;
+  align-items: start;
 }
 
-.easter-egg-close {
-  background: var(--color-primary);
-  color: white;
-  border: none;
-  padding: 0.75rem 2rem;
+.parcours-layout .timeline {
+  max-width: none;
+  margin: 0;
+}
+
+.parcours-detail-card {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  cursor: pointer;
-  font-weight: 600;
-  transition: transform var(--transition-fast);
-}
-
-.easter-egg-close:hover {
-  transform: translateY(-2px);
-}
-
-/* Game Modal */
-.game-content {
-  background: var(--color-bg);
   padding: 2rem;
-  border-radius: var(--radius-lg);
-  max-width: 700px;
-  text-align: center;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  transform: scale(0.8);
-  transition: transform var(--transition-normal);
-  position: relative;
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.easter-egg-modal.active .game-content {
-  transform: scale(1);
-}
-
-.game-header {
-  margin-bottom: 1rem;
-}
-
-.game-header h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-text);
-}
-
-.game-header p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: var(--color-text-light);
-}
-
-.game-stats {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 1rem;
-  font-size: 1.125rem;
-}
-
-.game-stats strong {
+.parcours-detail-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
   color: var(--color-primary);
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-border);
 }
 
-#game-canvas {
-  border: 3px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: #f0f0f0;
-  cursor: crosshair;
-  display: block;
-  margin: 0 auto;
+.parcours-detail-card p {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  margin-bottom: 1rem;
 }
 
-.game-instructions {
-  margin-top: 1rem;
-  font-size: 0.875rem;
-  color: var(--color-text-light);
+.parcours-detail-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .parcours-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Info Cards Grid (Après le BUT + Centres d'intérêt) */
+.info-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .info-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hover effect for detail cards */
+.hoverable-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hoverable-card:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
 }
 
 /* 

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initParallax();
     initSmoothScroll();
-    initEasterEgg();
+
 });
 
 /**
@@ -125,48 +125,3 @@ function initSmoothScroll() {
     });
 }
 
-/**
- * Easter Egg
- * Hidden surprise for curious visitors
- */
-function initEasterEgg() {
-    const easterEggBtn = document.getElementById('easter-egg-btn');
-    if (!easterEggBtn) return;
-
-    // Create modal
-    const modal = document.createElement('div');
-    modal.className = 'easter-egg-modal';
-    modal.innerHTML = `
-        <div class="easter-egg-content">
-            <h2>🎉 Bien joué !</h2>
-            <p>Vous avez trouvé l'easter egg.<br>Merci aux clients fidèles !</p>
-            <button class="easter-egg-close">Fermer</button>
-        </div>
-    `;
-    document.body.appendChild(modal);
-
-    // Show modal on click
-    easterEggBtn.addEventListener('click', () => {
-        modal.classList.add('active');
-    });
-
-    // Close modal
-    const closeBtn = modal.querySelector('.easter-egg-close');
-    closeBtn.addEventListener('click', () => {
-        modal.classList.remove('active');
-    });
-
-    // Close on backdrop click
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.classList.remove('active');
-        }
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-        }
-    });
-}
