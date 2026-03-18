@@ -489,9 +489,9 @@ section {
 }
 
 .carousel-slide {
-  min-width: 350px;
+  min-width: 450px;
   /* Fixed width for slides */
-  max-width: 350px;
+  max-width: 450px;
   padding: 0 15px;
   /* Gap between slides */
   opacity: 0.5;
@@ -911,4 +911,119 @@ section {
     animation: none !important;
     opacity: 0.03 !important;
   }
+}
+
+/* 
+ * Photo Bubble 
+ */
+.photo-bubble {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: grab;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  border: 4px solid white;
+  user-select: none;
+  touch-action: none;
+  background: white;
+}
+
+.photo-bubble:hover {
+  transform: scale(1.1);
+  /* Reduced scale since it's already big */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.photo-bubble:active {
+  cursor: grabbing;
+}
+
+.photo-bubble.dragging {
+  animation: rotateSlowly 5s linear infinite;
+  transform: scale(1.05);
+}
+
+@keyframes rotateSlowly {
+  from {
+    transform: rotate(0deg) scale(1.05);
+  }
+
+  to {
+    transform: rotate(360deg) scale(1.05);
+  }
+}
+
+.photo-bubble img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Basketball Hoop */
+.basketball-hoop {
+  position: fixed;
+  top: 50%;
+  left: -200px;
+  /* Initially hidden on the left */
+  transform: translateY(-50%);
+  width: 180px;
+  height: 140px;
+  z-index: 999;
+  transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+}
+
+.basketball-hoop.visible {
+  left: 40px;
+}
+
+.basketball-hoop img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+/* Fireworks */
+.fireworks-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2000;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* States */
+.photo-bubble.returning {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.photo-bubble.falling {
+  transition: top 0.4s cubic-bezier(0.5, 0, 0.7, 0.2), left 0.4s linear;
+}
+
+.photo-bubble.respawning {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.photo-bubble.hidden {
+  display: none;
 }

@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAE 1.01 : Jeu 421 - Julian Lopez</title>
-    <meta name="description" content="Détails du projet SAE 1.01">
+    <title>SAE 1.01 : Jeu 421 avec IA - Julian Lopez</title>
+    <meta name="description" content="Détails du projet SAE 1.01 : Jeu 421 avec IA">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
 </head>
 
 <body>
@@ -32,53 +34,68 @@
                 réalisations</a>
             <h1>SAE 1.01 : Jeu 421 avec IA</h1>
             <p class="subtitle">Académique</p>
-            <p class="tags">#Java #IA #POO #Tests</p>
+            <p class="tags">#Java #IA #POO #Probabilités</p>
 
             <figure style="margin: 2rem 0;">
-                <img src="../assets/images/sae421-01.webp" alt="Aperçu du jeu 421"
+                <img src="../assets/images/421.jpg" alt="Aperçu Jeu 421"
                     style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
-                    onerror="this.src='https://via.placeholder.com/800x400?text=Jeu+421+Main'">
-                <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Interface du
-                    jeu</figcaption>
+                    onerror="this.src='https://via.placeholder.com/800x400?text=Jeu+421'">
             </figure>
         </section>
 
         <div style="max-width: 800px; margin: 0 auto;">
 
             <section class="reveal">
-                <h2>Contexte</h2>
-                <p>Projet académique de première année, conception d'une IA basée sur les probabilités, développement
-                    itératif.</p>
-            </section>
-
-            <section class="reveal">
-                <h2>Méthodes & Résultats</h2>
-                <p>Structuration rigoureuse du code, mise en place de tests unitaires, et amélioration continue de l'IA
-                    pour optimiser ses décisions.</p>
-                <p>IA performante capable de battre un joueur moyen grâce aux calculs de probabilités.</p>
-            </section>
-
-            <section class="reveal">
-                <h2>Compétences Travaillées</h2>
+                <h2>Contexte du projet</h2>
+                <p>Ce projet a été réalisé dans le cadre de ma première SAÉ du BUT Informatique, en début de formation.</p>
+                <p>L’objectif était de développer une version jouable du jeu de 421, en implémentant :</p>
                 <ul>
-                    <li>C1-AC1 : Analyser un besoin et le modéliser</li>
-                    <li>C1-AC2 : Concevoir une solution technique</li>
-                    <li>C1-AC3 : Implémenter et tester la solution</li>
-                    <li>C2-AC1/AC2/AC3 : Optimisation et algorithmique</li>
+                    <li>les règles du jeu</li>
+                    <li>un système de tours et de lancers de dés</li>
+                    <li>une ou plusieurs intelligences artificielles capables de jouer automatiquement</li>
                 </ul>
+                <p>Le projet se déroulait en Java, uniquement en console, avec un fort accent mis sur la programmation orientée objet (POO), que nous découvrions à ce moment-là.</p>
+                <p>Une partie importante du projet reposait également sur l’utilisation de probabilités, afin de permettre à l’IA de prendre des décisions optimisées (relancer ou non certains dés en fonction des chances de réussite).</p>
+                <p>Le développement s’est fait de manière progressive, avec une amélioration continue des comportements de l’IA.</p>
             </section>
 
             <section class="reveal">
-                <h2>Contribution Personnelle</h2>
-                <p>Développement du moteur de jeu et de l'algorithme de l'IA.</p>
+                <h2>Contribution personnelle</h2>
+                <p>J’ai principalement travaillé sur le développement du moteur de jeu, en implémentant les règles du 421 ainsi que la gestion des différentes phases de jeu (lancers, scores, conditions de victoire).</p>
+                <p>J’ai également conçu et amélioré l’algorithme de l’intelligence artificielle, en m’appuyant sur des calculs de probabilités pour optimiser ses décisions. Cela impliquait de déterminer les meilleures stratégies possibles en fonction des combinaisons de dés obtenues.</p>
+                <p>Enfin, j’ai participé à la structuration du code en programmation orientée objet, en organisant les différentes classes pour rendre le programme plus lisible et évolutif.</p>
             </section>
 
+            <section class="reveal">
+                <h2>Ce que j’ai appris</h2>
+                <p>Ce projet a été une introduction importante au développement informatique, notamment à la programmation orientée objet.</p>
+                <p>J’ai appris à analyser un problème et le modéliser sous forme de classes et d’interactions, ce qui correspond aux bases du développement d’applications. J’ai également découvert l’importance de structurer son code de manière claire et maintenable dès les premières étapes d’un projet.</p>
+                <p>La conception de l’IA m’a permis de travailler sur des problématiques algorithmiques, en utilisant des probabilités pour améliorer la prise de décision. Cela m’a aidé à comprendre comment adapter une solution algorithmique à un problème donné et à optimiser progressivement son comportement.</p>
+                <p>Le projet m’a également sensibilisé à l’importance de la validation du programme, notamment à travers des tests et des vérifications régulières pour s’assurer du bon fonctionnement du jeu et de l’IA.</p>
+                <p>Enfin, étant l’un de mes premiers projets en informatique, cette SAÉ m’a permis de poser des bases solides en logique de programmation, rigueur et méthodologie de développement.</p>
+            </section>
+
+            <section class="reveal">
+                <h2>Traces du projet</h2>
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/regle421.png" alt="Règles du jeu de 421"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Règles+421'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Règles du jeu de 421</figcaption>
+                </figure>
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/proba421.jpg" alt="Probabilités pour obtenir un 421"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Probabilités+421'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Probabilités pour obtenir un 421</figcaption>
+                </figure>
+            </section>
         </div>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Julian Lopez. Tous droits réservés.</p>
+            <p>&copy; 2026 Julian Lopez. Tous droits réservés.</p>
         </div>
     </footer>
 

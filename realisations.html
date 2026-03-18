@@ -8,6 +8,8 @@
     <meta name="description" content="Projets et réalisations de Julian Lopez">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 
 <body>
@@ -39,6 +41,7 @@
                 <button class="filter-btn" data-filter="Académique">Académique</button>
                 <button class="filter-btn" data-filter="Personnel">Personnel</button>
                 <button class="filter-btn" data-filter="Professionnel">Professionnel</button>
+                <button class="filter-btn" data-filter="Événement">Événement</button>
             </div>
 
             <!-- Carrousel de projets -->
@@ -54,46 +57,56 @@
 
                         <!-- Projet #1 — BOTUP -->
                         <article class="carousel-slide card project-card" data-categorie="Académique">
-                            <img src="assets/images/botup-01.webp" alt="Aperçu du projet BOTUP" loading="lazy"
-                                onerror="this.src='https://via.placeholder.com/400x200?text=BOTUP'">
-                            <h3>BOTUP : Site de vote en ligne</h3>
-                            <p class="tags">#PHP #HTML/CSS #SQL #Scrum</p>
-                            <p>Application de vote en ligne en PHP/HTML/CSS, POO et base de données. Méthodologie Scrum,
-                                versioning Git, intégrité via triggers.</p>
+                            <img src="assets/images/botupA.png" alt="Aperçu du projet Site de vote en ligne" loading="lazy"
+                                onerror="this.src='https://via.placeholder.com/400x200?text=Site+de+vote'">
+                            <h3>Site de vote en ligne</h3>
+                            <p class="tags">#PHP #MVC #SQL #Agile</p>
+                            <p>Réalisation d’un site web de vote en ligne permettant de créer des questionnaires, gérer des utilisateurs et collecter des réponses. Le projet intègre un système d’authentification avec gestion des rôles et contrôle des accès, et a été développé en respectant une architecture MVC, des contraintes d’intégrité des données et des exigences de qualité logicielle, dans un cadre de gestion de projet agile.</p>
                             <a href="projets/botup.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
                                 projet</a>
                         </article>
 
                         <!-- Projet #2 — SAE 1.01 -->
                         <article class="carousel-slide card project-card" data-categorie="Académique">
-                            <img src="assets/images/sae421-01.webp" alt="Aperçu du projet Jeu 421" loading="lazy"
+                            <img src="assets/images/421.jpg" alt="Aperçu du projet Jeu 421" loading="lazy"
                                 onerror="this.src='https://via.placeholder.com/400x200?text=Jeu+421'">
                             <h3>SAE 1.01 : Jeu 421 avec IA</h3>
-                            <p class="tags">#Java #IA #POO #Tests</p>
-                            <p>Jeu 421 en Java avec IA probabiliste ; mise en pratique de la POO et des tests.</p>
+                            <p class="tags">#Java #IA #POO #Probabilités</p>
+                            <p>Développement en Java d’un jeu de 421 en console, intégrant une intelligence artificielle basée sur des probabilités. Le projet consistait à concevoir le moteur de jeu ainsi que différents niveaux d’IA capables de prendre des décisions stratégiques pour affronter un joueur.</p>
                             <a href="projets/sae-421.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
                                 projet</a>
                         </article>
 
                         <!-- Projet #3 — SAE 2.02 -->
                         <article class="carousel-slide card project-card" data-categorie="Académique">
-                            <img src="assets/images/tcg-01.webp" alt="Aperçu du projet Pokémon TCG" loading="lazy"
+                            <img src="assets/images/pokemon.gif" alt="Aperçu du projet Pokémon TCG" loading="lazy"
                                 onerror="this.src='https://via.placeholder.com/400x200?text=Pokemon+TCG'">
                             <h3>SAE 2.02 : Pokémon TCG</h3>
-                            <p class="tags">#Java #JavaFX #IHM #UX</p>
-                            <p>Appli ludique avec IHM JavaFX ; modularité, gestion d'événements et attention UX.</p>
+                            <p class="tags">#Java #JavaFX #MVC #OOP</p>
+                            <p>Développement d’une version numérique du jeu de cartes Pokémon TCG, intégrant une logique métier complète ainsi qu’une interface graphique interactive en JavaFX. L’application permet de simuler des parties en respectant les principales règles du jeu, avec une attention particulière portée à l’ergonomie et à la fluidité de l’expérience utilisateur.</p>
                             <a href="projets/pokemon-tcg.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
                                 projet</a>
                         </article>
 
                         <!-- Projet #4 — Code Game Jam -->
-                        <article class="carousel-slide card project-card" data-categorie="Académique">
-                            <img src="assets/images/gamejam-01.webp" alt="Aperçu du projet Game Jam" loading="lazy"
-                                onerror="this.src='https://via.placeholder.com/400x200?text=Game+Jam'">
-                            <h3>Code Game Jam</h3>
+                        <article class="carousel-slide card project-card" data-categorie="Événement">
+                            <img src="assets/images/cgj-officielle.jpg" alt="Aperçu du projet Game Jam" loading="lazy"
+                                onerror="this.src='https://via.placeholder.com/400x200?text=Code+Game+Jam'">
+                            <h3>Code Game Jam 2025 &amp; 2026</h3>
                             <p class="tags">#GameDev #Teamwork #Agile</p>
-                            <p>Prototype de jeu réalisé en équipe en 24h ; coordination, compromis et réactivité.</p>
+                            <p>Participation à deux Game Jam organisées par mon IUT, durant lesquelles nous devions concevoir et développer un jeu vidéo jouable en environ 32 heures. Ces événements, réalisés en équipe, imposaient un thème à respecter et demandaient de produire un prototype fonctionnel dans un temps très limité. Ces expériences m’ont permis de découvrir le développement de jeux vidéo tout en travaillant en collaboration sur des projets créatifs et techniques.</p>
                             <a href="projets/game-jam.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
+                                projet</a>
+                        </article>
+
+                        <!-- Projet #5 — Nuit de l'Info 2025 -->
+                        <article class="carousel-slide card project-card" data-categorie="Événement">
+                            <img src="assets/images/NDI.png" alt="Aperçu du projet Nuit de l'Info" loading="lazy"
+                                onerror="this.src='https://via.placeholder.com/400x200?text=Nuit+de+l%27Info'">
+                            <h3>Nuit de l'Info 2025</h3>
+                            <p class="tags">#WebDev #Teamwork #JavaScript</p>
+                            <p>Participation à la Nuit de l’Info 2025, un événement national durant lequel des équipes d’étudiants doivent concevoir et développer une application web en une seule nuit à partir d’un sujet révélé au début de l’événement. Avec mon équipe, nous avons réalisé un site web interactif destiné à présenter la NIRD et ses principes de manière ludique à travers différentes activités et mini-jeux.</p>
+                            <a href="projets/nuit-info.html" class="btn btn-outline" style="margin-top: 1rem;">Voir le
                                 projet</a>
                         </article>
 
@@ -113,6 +126,7 @@
                 <button class="carousel-indicator" data-slide="1" aria-label="Aller au projet 2"></button>
                 <button class="carousel-indicator" data-slide="2" aria-label="Aller au projet 3"></button>
                 <button class="carousel-indicator" data-slide="3" aria-label="Aller au projet 4"></button>
+                <button class="carousel-indicator" data-slide="4" aria-label="Aller au projet 5"></button>
             </div>
 
         </section>

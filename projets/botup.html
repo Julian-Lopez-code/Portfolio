@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOTUP - Julian Lopez</title>
-    <meta name="description" content="Détails du projet BOTUP">
+    <title>Site de vote en ligne - Julian Lopez</title>
+    <meta name="description" content="Détails du projet Site de vote en ligne">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
 </head>
 
 <body>
@@ -30,57 +32,96 @@
         <section class="reveal">
             <a href="../realisations.html" style="display: inline-block; margin-bottom: 1rem;">&larr; Retour aux
                 réalisations</a>
-            <h1>BOTUP : Site de vote en ligne</h1>
+            <h1>Site de vote en ligne</h1>
             <p class="subtitle">Académique</p>
-            <p class="tags">#PHP #HTML/CSS #SQL #Scrum</p>
+            <p class="tags">#PHP #MVC #SQL #Agile</p>
 
             <figure style="margin: 2rem 0;">
-                <img src="../assets/images/botup-01.webp" alt="Aperçu principal du projet BOTUP"
+                <img src="../assets/images/botupA.png" alt="Aperçu Site de vote"
                     style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
-                    onerror="this.src='https://via.placeholder.com/800x400?text=BOTUP+Main'">
-                <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Interface
-                    principale de vote</figcaption>
+                    onerror="this.src='https://via.placeholder.com/800x400?text=Site+de+vote'">
             </figure>
         </section>
 
         <div style="max-width: 800px; margin: 0 auto;">
 
             <section class="reveal">
-                <h2>Contexte</h2>
-                <p>Semestre BUT2, équipe de 4, contraintes d’intégrité BD, architecture maintenable.</p>
-            </section>
-
-            <section class="reveal">
-                <h2>Méthodes & Résultats</h2>
-                <p>Sprints, revues, phpMyAdmin, PL/SQL pour triggers.</p>
-                <p>Application fonctionnelle respectant les contraintes d'intégrité et livrée dans les temps.</p>
-
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
-                    <img src="../assets/images/botup-02.webp" alt="Détail interface"
-                        style="border-radius: var(--radius-sm);"
-                        onerror="this.src='https://via.placeholder.com/400x300?text=BOTUP+Detail'">
-                    <!-- Placeholder for video if available later -->
-                    <div
-                        style="background: #eee; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); color: #666;">
-                        <p>Vidéo démo à venir</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="reveal">
-                <h2>Compétences Travaillées</h2>
+                <h2>Contexte du projet</h2>
+                <p>Ce projet a été réalisé dans le cadre du semestre 2 du BUT Informatique, en équipe de quatre étudiants, sur une durée d’environ trois mois.</p>
+                <p>L’objectif était de répondre à une demande client fictive en concevant une application web complète permettant de gérer un système de vote en ligne : création de questionnaires, gestion des propositions, participation des utilisateurs et consultation des résultats.</p>
+                <p>Le projet comportait plusieurs contraintes techniques et organisationnelles :</p>
                 <ul>
-                    <li>Programmation Orientée Objet (PHP)</li>
-                    <li>Conception et administration de Base de Données (SQL, Triggers)</li>
-                    <li>Pratiques de tests et validation</li>
-                    <li>Collaboration en méthode Agile (Scrum)</li>
+                    <li>respect d’une architecture MVC pour garantir la maintenabilité du code</li>
+                    <li>utilisation de PHP pour la logique serveur et l’accès aux données</li>
+                    <li>conception d’une base de données relationnelle avec contraintes d’intégrité</li>
+                    <li>mise en place de triggers SQL pour automatiser certaines vérifications</li>
+                    <li>implémentation d’un système d’authentification sécurisé avec gestion des rôles (administrateur, utilisateur…) et contrôle des accès aux fonctionnalités</li>
+                    <li>développement d’une interface en HTML/CSS avec quelques interactions en JavaScript</li>
                 </ul>
+                <p>Nous avons travaillé en suivant une méthodologie Agile (Scrum), avec 4 sprints, incluant des réunions de suivi, des revues avec le client et une organisation collaborative des tâches.</p>
             </section>
 
             <section class="reveal">
-                <h2>Contribution Personnelle</h2>
-                <p>J'ai majoritairement travaillé sur le développement front-end, la conception des modèles PHP et
-                    l'écriture des scripts SQL pour les triggers de base de données.</p>
+                <h2>Contribution personnelle</h2>
+                <p>J’ai participé activement à plusieurs aspects du projet, à la fois techniques et organisationnels.</p>
+                <p>Sur le plan technique, j’ai contribué à la conception de la base de données, en définissant les différentes entités et leurs relations, ainsi qu’à la mise en place de contraintes d’intégrité et de triggers SQL afin de garantir la cohérence des données.</p>
+                <p>J’ai également développé plusieurs fonctionnalités liées à la gestion des votes (questions, propositions, réponses), en prenant en compte l’ensemble de leur cycle de vie (création, modification, suppression). J’ai aussi contribué à la mise en place du système d’authentification et du contrôle des accès, en veillant à ce que les utilisateurs puissent uniquement accéder aux fonctionnalités correspondant à leur rôle.</p>
+                <p>Sur le plan organisationnel, j’ai eu l’occasion d’occuper le rôle de Scrum Master lors d’un sprint, en facilitant la communication au sein de l’équipe et en veillant au bon déroulement du processus Agile. J’ai aussi participé à l’accompagnement du Product Owner, notamment dans la formulation des besoins et des questions à poser au client, afin de mieux comprendre les attentes du projet.</p>
+                <p>Enfin, j’ai contribué à la préparation des revues de sprint, en réalisant des supports de présentation pour exposer l’avancement du projet et les fonctionnalités développées.</p>
+            </section>
+
+            <section class="reveal">
+                <h2>Ce que j’ai appris</h2>
+                <p>Ce projet m’a permis de consolider et d’approfondir plusieurs compétences essentielles en informatique.</p>
+                <p>Sur le plan technique, j’ai renforcé mes compétences en développement web avec PHP, ainsi qu’en programmation orientée objet et en structuration d’une application selon une architecture MVC. J’ai également appris à concevoir une base de données cohérente et fiable, en intégrant des contraintes d’intégrité et en utilisant des triggers pour automatiser certains traitements.</p>
+                <p>La mise en place d’un système d’authentification avec gestion des rôles m’a permis de mieux comprendre les enjeux liés à la sécurisation des accès et des données, ainsi que l’importance de contrôler précisément les droits des utilisateurs dans une application.</p>
+                <p>Le projet m’a aussi amené à porter une attention particulière à la qualité du code, à son organisation et à sa maintenabilité, ainsi qu’à la validation des fonctionnalités par des phases de test régulières.</p>
+                <p>D’un point de vue méthodologique, travailler en Scrum m’a permis de mieux comprendre comment formaliser les besoins d’un client, organiser le travail en équipe et suivre l’avancement d’un projet à travers des sprints. Le rôle de Scrum Master m’a également aidé à développer mes compétences en communication, coordination et gestion d’équipe.</p>
+                <p>Enfin, cette expérience m’a sensibilisé à l’importance de la collaboration dans un projet informatique, ainsi qu’à la nécessité de s’adapter aux contraintes techniques et organisationnelles pour livrer une application fonctionnelle dans les délais.</p>
+            </section>
+
+            <section class="reveal">
+                <h2>Traces du projet</h2>
+                <p>
+                    <a href="https://webinfo.iutmontp.univ-montp2.fr/~schraders/sae3a-base/web/controleurFrontal.php" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Accéder au site de vote en ligne</a>
+                </p>
+                
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/botupU.png" alt="Création d'un compte"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Création+de+compte'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Page de création d'un compte</figcaption>
+                </figure>
+                
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/botupM.png" alt="Espace utilisateur"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Espace+utilisateur'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Espace de l'utilisateur (questions, propositions, zones de vote)</figcaption>
+                </figure>
+                
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/botupQ.png" alt="Visuel d'une question"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Visuel+Question'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Visuel d'une question</figcaption>
+                </figure>
+
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/botupP.png" alt="Visuel des différentes propositions pour une question"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Visuel+Propositions'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Différentes propositions pour une question</figcaption>
+                </figure>
+
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/botupP2.png" alt="Détail d'une proposition"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Détail+Proposition'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Détail d'une proposition</figcaption>
+                </figure>
+
+                
             </section>
 
         </div>
@@ -88,7 +129,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Julian Lopez. Tous droits réservés.</p>
+            <p>&copy; 2026 Julian Lopez. Tous droits réservés.</p>
         </div>
     </footer>
 

@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAE 2.02 : Pokémon TCG - Julian Lopez</title>
-    <meta name="description" content="Détails du projet Pokémon TCG">
+    <meta name="description" content="Détails du projet SAE 2.02 : Pokémon TCG">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
 </head>
 
 <body>
@@ -32,44 +34,66 @@
                 réalisations</a>
             <h1>SAE 2.02 : Pokémon TCG</h1>
             <p class="subtitle">Académique</p>
-            <p class="tags">#Java #JavaFX #IHM #UX</p>
+            <p class="tags">#Java #JavaFX #MVC #OOP</p>
 
             <figure style="margin: 2rem 0;">
-                <img src="../assets/images/tcg-01.webp" alt="Aperçu Pokémon TCG"
+                <img src="../assets/images/pokemon.gif" alt="Aperçu Pokémon TCG"
                     style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
-                    onerror="this.src='https://via.placeholder.com/800x400?text=Pokemon+TCG+Main'">
-                <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Interface de
-                    jeu JavaFX</figcaption>
+                    onerror="this.src='https://via.placeholder.com/800x400?text=Pokemon+TCG'">
             </figure>
         </section>
 
         <div style="max-width: 800px; margin: 0 auto;">
 
             <section class="reveal">
-                <h2>Contexte</h2>
-                <p>Développement d'une application graphique riche, avec fortes contraintes UI/UX et besoin de
-                    modularité.</p>
-            </section>
-
-            <section class="reveal">
-                <h2>Méthodes & Résultats</h2>
-                <p>Gestion des événements utilisateurs, organisation du code en MVC, et soin apporté au rendu
-                    interactif.</p>
-                <p>Application fluide et intuitive, respectant la charte graphique de l'univers Pokémon.</p>
-            </section>
-
-            <section class="reveal">
-                <h2>Compétences Travaillées</h2>
+                <h2>Contexte du projet</h2>
+                <p>Ce projet a été réalisé dans le cadre d’une SAÉ du BUT Informatique, en binôme, sur une durée d’environ deux mois.</p>
+                <p>Le développement s’est déroulé en deux phases :</p>
                 <ul>
-                    <li>Développement d'IHM (JavaFX)</li>
-                    <li>C1-AC4 : Gérer des données hétérogènes</li>
-                    <li>Bonnes pratiques de développement (Clean Code)</li>
+                    <li>une première phase dédiée à la logique métier (règles du jeu, gestion des cartes, attaques, effets)</li>
+                    <li>une seconde phase consacrée à la création de l’interface graphique avec JavaFX</li>
                 </ul>
+                <p>Les contraintes principales étaient :</p>
+                <ul>
+                    <li>utilisation de Java pour toute la logique applicative</li>
+                    <li>utilisation de JavaFX pour concevoir une interface graphique interactive</li>
+                    <li>respect des règles fondamentales du jeu Pokémon TCG</li>
+                    <li>conception d’une application modulaire et maintenable, avec une séparation claire entre logique métier et interface (architecture de type MVC)</li>
+                </ul>
+                <p>L’objectif était de produire une application jouable, intuitive et fidèle à l’univers du jeu.</p>
             </section>
 
             <section class="reveal">
-                <h2>Contribution Personnelle</h2>
-                <p>Implémentation des vues et contrôleurs JavaFX, gestion des animations de cartes.</p>
+                <h2>Contribution personnelle</h2>
+                <p>J’ai contribué de manière significative au développement du projet, en intervenant à la fois sur la logique métier et sur l’interface graphique.</p>
+                <p>Sur la partie interface, j’ai implémenté les vues et contrôleurs JavaFX, en mettant en place la gestion des interactions utilisateur (clics, actions de jeu) ainsi que des animations de cartes afin de rendre l’expérience plus dynamique. J’ai également travaillé sur les bindings JavaFX, permettant de synchroniser automatiquement les données et l’interface pour assurer une meilleure fluidité.</p>
+                <p>Sur la partie métier, j’ai participé à l’implémentation des mécaniques de jeu, notamment certaines attaques et effets de cartes.</p>
+                <p>Enfin, j’ai contribué à la validation du projet à travers la mise en place de tests, afin de garantir le bon fonctionnement des différentes mécaniques du jeu et d’assurer la cohérence globale de l’application.</p>
+            </section>
+
+            <section class="reveal">
+                <h2>Ce que j’ai appris</h2>
+                <p>Ce projet m’a permis de renforcer mes compétences en développement d’applications avec interface graphique, en particulier avec JavaFX.</p>
+                <p>J’ai appris à concevoir une interface utilisateur interactive et réactive, en utilisant les bindings et la gestion des événements, tout en prenant en compte des enjeux d’ergonomie et d’expérience utilisateur.</p>
+                <p>Sur le plan technique, j’ai également consolidé ma capacité à structurer une application de manière modulaire, en séparant clairement la logique métier de l’interface, et à appliquer des bonnes pratiques de conception et de programmation.</p>
+                <p>Le travail sur les mécaniques du jeu m’a amené à manipuler des données variées et complexes (cartes, effets, états du jeu), tout en garantissant leur cohérence, ce qui m’a permis de mieux comprendre les enjeux liés à la gestion des données dans une application.</p>
+                <p>Enfin, la mise en place de tests m’a sensibilisé à l’importance de la validation du comportement d’une application, afin d’assurer sa fiabilité et sa qualité.</p>
+            </section>
+
+            <section class="reveal">
+                <h2>Traces du projet</h2>
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/pokemonFenetreLancement.png" alt="Fenêtre de lancement"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Fenêtre+Lancement'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Fenêtre de lancement du jeu</figcaption>
+                </figure>
+                <figure style="margin: 2rem 0;">
+                    <img src="../assets/images/pokemon.gif" alt="Aperçu Pokémon TCG en jeu"
+                        style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);"
+                        onerror="this.src='https://via.placeholder.com/800x400?text=Gameplay+Pokemon'">
+                    <figcaption style="text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">Aperçu du jeu en pleine partie</figcaption>
+                </figure>
             </section>
 
         </div>
@@ -77,7 +101,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Julian Lopez. Tous droits réservés.</p>
+            <p>&copy; 2026 Julian Lopez. Tous droits réservés.</p>
         </div>
     </footer>
 
